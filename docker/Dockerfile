@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get install -y build-essential && \
     apt-get clean && \
-    curl https://s3-us-west-2.amazonaws.com/grafana-releases/master/grafana_latest_amd64.deb > /tmp/grafana.deb && \
+    curl https://dl.grafana.com/oss/release/grafana_6.1.6_amd64.deb > /tmp/grafana.deb && \
     dpkg -i /tmp/grafana.deb && \
     rm /tmp/grafana.deb && \
     curl -L https://github.com/tianon/gosu/releases/download/1.7/gosu-amd64 > /usr/sbin/gosu && \

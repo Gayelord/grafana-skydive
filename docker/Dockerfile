@@ -28,7 +28,7 @@ RUN apt-get update && \
 RUN cd /home/grafana && \
     git clone https://github.com/skydive-project/skydive-grafana-datasource.git && \
     cd skydive-grafana-datasource && \
-    git checkout dev && \
+    git checkout master && \
     npm i && \
     ./node_modules/grunt-cli/bin/grunt && \
     mkdir -p /var/lib/grafana/plugins && \

@@ -5,7 +5,7 @@ This repository is based in the Skydive Project (https://github.com/skydive-proj
 Use the following instructions to deploy the full stack, Skydive + Grafana with Skydive plugin. Note that the Skydive Agent is configured to get information from the SDN using ovs-multitenant plugin for this particular example:
 
       # oc new-project skydive
-      # oc create -f https://raw.githubusercontent.com/makentenza/grafana-skydive/master/kube/skydive-template.json
+      # oc create -f https://raw.githubusercontent.com/gayelord/grafana-skydive/master/kube/skydive-template.json
       # oc adm policy add-scc-to-user privileged system:serviceaccount:skydive:default
       # oc new-app skydive
         --> Deploying template skydive
@@ -28,7 +28,7 @@ As soon as the agent Pods are running, you will see all your Cluster topology in
 
 Once the Skydive part is deployed we can now deploy the Grafana part:
 
-      # oc create -f https://raw.githubusercontent.com/makentenza/grafana-skydive/master/kube/grafana-skydive.json
+      # oc create -f https://raw.githubusercontent.com/gayelord/grafana-skydive/master/kube/grafana-skydive.json
         imagestream "grafana-skydive" created
         serviceaccount "grafana" created
         buildconfig "grafana-skydive" created

@@ -49,7 +49,7 @@
                 "source": {
                     "contextDir": "docker/",
                     "git": {
-                        "uri": "https://github.com/makentenza/grafana-skydive.git"
+                        "uri": "https://github.com/gayelord/grafana-skydive.git"
                     },
                     "type": "Git"
                 },
